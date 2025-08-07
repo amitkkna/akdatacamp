@@ -1,0 +1,14 @@
+[build]
+  publish = ".next"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Note: Set these in Netlify UI under Site Settings > Environment Variables
+# Don't put actual values here for security
