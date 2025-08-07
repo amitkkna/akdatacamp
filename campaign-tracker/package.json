@@ -26,7 +26,7 @@
     "lint:fix": "next lint --fix",
     "type-check": "tsc --noEmit",
     "build:analyze": "ANALYZE=true npm run build",
-    "export": "next build && next export",
+    "export": "next build",
     "build-check": "node scripts/build-check.js",
     "prepare-deploy": "npm run build-check && npm run lint && npm run type-check && npm run build"
   },
