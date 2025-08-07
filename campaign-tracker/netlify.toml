@@ -5,10 +5,12 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Handle client-side routing for SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = true
 
 # Note: Set these in Netlify UI under Site Settings > Environment Variables
 # Don't put actual values here for security
